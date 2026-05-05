@@ -1,0 +1,150 @@
+.product-img-main {
+  background-color: var(--white);
+  border-radius: 0;
+  padding: 60px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-premium);
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.hover-gold:hover {
+  color: var(--primary-gold);
+}
+
+.product-img-main img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: 0;
+  display: block;
+}
+
+.product-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--accent-green);
+  letter-spacing: -0.02em;
+}
+
+.size-label {
+  display: inline-block;
+  background-color: var(--accent-green);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-gold);
+  margin-bottom: 24px;
+}
+
+.product-desc {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.benefits-list {
+  margin-bottom: 32px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+.check-icon {
+  color: var(--accent-green);
+}
+
+.add-to-cart-action {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.quantity-selector button {
+  background: var(--white);
+  border: none;
+  width: 40px;
+  height: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quantity-selector button:hover {
+  background: var(--light-gold);
+}
+
+.quantity-selector span {
+  width: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.add-btn {
+  height: 50px;
+  flex-grow: 1;
+}
+
+.text-primary-gold {
+  color: var(--primary-gold);
+}
+
+.trust-badge {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .product-layout {
+    gap: 40px;
+  }
+  .product-title {
+    font-size: 2rem;
+  }
+  .product-img-main {
+    padding: 20px;
+  }
+  .add-to-cart-action {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .quantity-selector {
+    justify-content: center;
+  }
+}
