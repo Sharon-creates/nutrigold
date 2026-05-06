@@ -55,7 +55,7 @@ const Shop = () => {
           {filteredProducts.map(product => (
             <div key={product.id} className="product-card animate-fade-in">
               <Link to={`/product/${product.id}`} className="product-img-wrapper">
-                <img src={product.image} alt={product.name} loading="lazy" />
+                <img src={product.image} alt={product.name} loading="lazy" decoding="async" />
                 <div className="product-size-badge">{product.size}</div>
               </Link>
               <div className="product-info">

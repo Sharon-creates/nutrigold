@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="about-story grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-32 xl:gap-40 items-center">
           <div className="about-img animate-fade-in">
-            <img src={aboutStory} alt="Perfect Golden Results with Nutrigold" loading="lazy" />
+            <img src={aboutStory} alt="Perfect Golden Results with Nutrigold" loading="lazy" decoding="async" />
           </div>
           <div className="about-content animate-fade-in">
             <h2>Our Story</h2>
