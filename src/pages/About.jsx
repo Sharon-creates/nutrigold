@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Target, Heart } from 'lucide-react';
+import aboutStory from '../assets/about-story.jpeg';
 import './About.css';
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
     <div className="about-page page-padding">
       <div className="container">
 
-        
+
         <div className="about-hero animate-fade-in text-center">
           <h1 className="section-title">About Nutrigold</h1>
           <p className="section-subtitle">A legacy of trust, purity, and golden quality for your everyday meals.</p>
@@ -15,7 +16,7 @@ const About = () => {
 
         <div className="about-story grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-32 xl:gap-40 items-center">
           <div className="about-img animate-fade-in">
-            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&auto=format&fit=crop&q=80" alt="Nutrigold Factory Process" />
+            <img src={aboutStory} alt="Perfect Golden Results with Nutrigold" />
           </div>
           <div className="about-content animate-fade-in">
             <h2>Our Story</h2>
