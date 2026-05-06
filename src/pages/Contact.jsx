@@ -1,10 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Mail, Phone, MapPin, Send, ArrowLeft } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
-  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -21,10 +19,7 @@ const Contact = () => {
   return (
     <div className="contact-page page-padding">
       <div className="container">
-        <button onClick={() => navigate(-1)} className="back-btn flex items-center gap-2 mb-8 text-light hover-gold">
-          <ArrowLeft size={20} />
-          <span>Back</span>
-        </button>
+
         
         <div className="contact-header text-center animate-fade-in">
           <h1 className="section-title">Get In Touch</h1>

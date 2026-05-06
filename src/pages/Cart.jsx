@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Trash2, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Trash2, ArrowRight } from 'lucide-react';
 import { CartContext } from '../context/CartContext';
 import './Cart.css';
 
 const Cart = () => {
   const { cartItems, removeFromCart, updateQuantity, getCartTotal } = useContext(CartContext);
-  const navigate = useNavigate();
 
   const handleCheckout = () => {
     if (cartItems.length === 0) return;
@@ -32,10 +31,7 @@ const Cart = () => {
     return (
       <div className="cart-page page-padding">
         <div className="container">
-          <button onClick={() => navigate(-1)} className="back-btn flex items-center gap-2 mb-8 text-light hover-gold">
-            <ArrowLeft size={20} />
-            <span>Back</span>
-          </button>
+
           <div className="text-center min-vh-50 flex items-center justify-center flex-col">
             <h2 className="section-title">Your Cart is Empty</h2>
             <p className="mb-8">Looks like you haven't added anything to your cart yet.</p>
@@ -49,10 +45,7 @@ const Cart = () => {
   return (
     <div className="cart-page page-padding">
       <div className="container">
-        <button onClick={() => navigate(-1)} className="back-btn flex items-center gap-2 mb-8 text-light hover-gold">
-          <ArrowLeft size={20} />
-          <span>Back</span>
-        </button>
+
         <h1 className="section-title mb-8">Your Cart</h1>
         
         <div className="cart-layout grid grid-cols-1 lg:grid-cols-3 gap-12">

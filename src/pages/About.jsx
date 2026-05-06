@@ -1,17 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { ShieldCheck, Target, Heart, ArrowLeft } from 'lucide-react';
+import { ShieldCheck, Target, Heart } from 'lucide-react';
 import './About.css';
 
 const About = () => {
-  const navigate = useNavigate();
   return (
     <div className="about-page page-padding">
       <div className="container">
-        <button onClick={() => navigate(-1)} className="back-btn flex items-center gap-2 mb-8 text-light hover-gold">
-          <ArrowLeft size={20} />
-          <span>Back</span>
-        </button>
+
         
         <div className="about-hero animate-fade-in text-center">
           <h1 className="section-title">About Nutrigold</h1>

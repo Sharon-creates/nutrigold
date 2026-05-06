@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { products } from '../data/products';
-import { Filter, ArrowLeft } from 'lucide-react';
+import { Filter } from 'lucide-react';
 import { CartContext } from '../context/CartContext';
 import './Shop.css';
 
@@ -17,10 +17,7 @@ const Shop = () => {
   return (
     <div className="shop-page page-padding">
       <div className="container">
-        <button onClick={() => navigate(-1)} className="back-btn flex items-center gap-2 mb-8 text-light hover-gold">
-          <ArrowLeft size={20} />
-          <span>Back</span>
-        </button>
+
         <div className="page-header text-center">
           <h1 className="section-title">Shop Nutrigold</h1>
           <p className="section-subtitle">Find the perfect size for your cooking needs.</p>

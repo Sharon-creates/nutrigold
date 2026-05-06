@@ -34,16 +34,17 @@
 }
 
 .navbar-img-logo {
-  height: 110px; /* Increased inside the box */
+  height: 180px; /* Increased further as requested */
   width: auto;
   object-fit: contain;
   transition: all 0.4s ease;
-  margin-top: 5px;
+  margin-top: 25px; /* Pronounced breakout at the bottom */
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.15));
 }
 
 .navbar.scrolled .navbar-img-logo {
-  height: 85px;
-  margin-top: 0;
+  height: 130px; /* Increased further */
+  margin-top: 15px;
 }
 
 .nav-links {
@@ -125,13 +126,17 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+
   .mobile-menu-btn {
     display: block;
   }
 
   .nav-links {
     position: absolute;
-    top: 100%;
+    top: 80px;
     left: 0;
     width: 100%;
     background-color: var(--white);
@@ -149,8 +154,9 @@
   }
 
   .navbar-img-logo {
-    height: 60px;
-    transform: scale(2);
+    height: 100px;
     margin-top: 5px;
+    transform: none;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
   }
 }

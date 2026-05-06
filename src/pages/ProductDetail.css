@@ -1,24 +1,13 @@
 .product-img-main {
   background-color: var(--white);
-  border-radius: 0;
+  border-radius: 12px;
   padding: 60px;
   text-align: center;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-premium);
 }
 
-.back-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
 
-.hover-gold:hover {
-  color: var(--primary-gold);
-}
 
 .product-img-main img {
   max-width: 400px;
@@ -130,21 +119,61 @@
   font-size: 0.95rem;
 }
 
-@media (max-width: 768px) {
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
   .product-layout {
-    gap: 40px;
+    gap: 40px !important;
   }
   .product-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .product-img-main {
-    padding: 20px;
+    padding: 30px;
+    max-width: 100%;
+  }
+  .product-details {
+    padding-left: 20px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .product-layout {
+    gap: 30px;
+  }
+  .product-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .product-price {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .product-img-main {
+    padding: 30px 15px;
+    border-radius: 12px;
+  }
+  .product-img-main img {
+    margin: 0 auto;
+  }
+  .size-label {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 16px;
   }
   .add-to-cart-action {
     flex-direction: column;
     align-items: stretch;
   }
   .quantity-selector {
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .product-desc {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .benefit-item {
     justify-content: center;
   }
 }

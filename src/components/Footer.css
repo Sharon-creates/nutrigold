@@ -153,7 +153,8 @@
     justify-content: center;
   }
   .footer-img-logo {
-    margin: 0 auto 30px;
-    transform: scale(1.8);
+    margin: 0 auto 40px;
+    transform: scale(1.5);
+    transform-origin: center;
   }
 }

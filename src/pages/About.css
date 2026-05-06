@@ -86,9 +86,15 @@
 .why-card {
   background: var(--white);
   padding: 40px;
-  border-radius: 0;
-  border-left: 4px solid var(--accent-green);
-  box-shadow: var(--shadow-premium);
+  border-radius: 12px;
+  border-left: 5px solid var(--accent-green);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
 }
 
 .why-card h3 {
@@ -102,14 +108,31 @@
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-content h2 {
+    font-size: 2.5rem;
+  }
+  .value-card {
+    padding: 50px 30px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
   .about-img img {
     margin: 0 auto 30px;
   }
   .about-content {
     text-align: center;
   }
+  .about-content h2 {
+    font-size: 2.2rem;
+  }
   .value-card {
+    padding: 40px 20px;
+  }
+  .why-card {
     padding: 30px 20px;
   }
 }

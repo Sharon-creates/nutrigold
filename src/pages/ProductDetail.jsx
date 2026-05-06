@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ShoppingCart, Check, ShieldCheck, ArrowLeft } from 'lucide-react';
+import { ShoppingCart, Check, ShieldCheck } from 'lucide-react';
 import { products } from '../data/products';
 import { CartContext } from '../context/CartContext';
 import './ProductDetail.css';
@@ -20,10 +20,7 @@ const ProductDetail = () => {
     <div className="product-detail-page page-padding">
       <div className="container">
         
-        <button onClick={() => navigate(-1)} className="back-btn flex items-center gap-2 mb-8 text-light hover-gold">
-          <ArrowLeft size={20} />
-          <span>Back</span>
-        </button>
+
 
         <div className="product-layout grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-32 xl:gap-40 items-center">
           
