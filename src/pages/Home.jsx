@@ -50,6 +50,8 @@ const Home = () => {
                 src={img} 
                 alt="Premium Nutrigold Cooking Oil" 
                 className={`hero-image slide-img ${index === currentSlide ? 'active' : ''}`}
+                loading={index === 0 ? "eager" : "lazy"}
+                {...(index === 0 ? { fetchpriority: "high" } : {})}
               />
             ))}
           </div>
@@ -92,7 +94,7 @@ const Home = () => {
             {products.map(product => (
               <div key={product.id} className="product-card">
                 <Link to={`/product/${product.id}`} className="product-img-wrapper">
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.image} alt={product.name} loading="lazy" />
                   <div className="product-size-badge">{product.size}</div>
                 </Link>
                 <div className="product-info">
