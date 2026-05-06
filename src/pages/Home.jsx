@@ -50,7 +50,7 @@ const Home = () => {
                 src={img} 
                 alt="Premium Nutrigold Cooking Oil" 
                 className={`hero-image slide-img ${index === currentSlide ? 'active' : ''}`}
-                loading={index === 0 ? "eager" : "lazy"}
+                loading="eager"
                 decoding="async"
                 {...(index === 0 ? { fetchpriority: "high" } : {})}
               />

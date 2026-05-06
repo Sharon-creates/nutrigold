@@ -76,7 +76,7 @@
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   z-index: 2;
   width: 400px; /* Setting a nice wide fixed width for responsiveness */
   max-width: 100%;
@@ -294,7 +294,7 @@
     height: 100%;
     object-fit: contain;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
