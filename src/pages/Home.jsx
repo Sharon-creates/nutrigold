@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(timer);
   }, [images.length]);
 
