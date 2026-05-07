@@ -9,12 +9,14 @@
 
 .about-img img {
   border-radius: 20px;
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
+  padding: 15px;
+  background: white;
   margin-right: auto;
   margin-left: 0;
   display: block;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
 .about-content h2 {

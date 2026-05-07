@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid gap-8">
           <div className="footer-col brand-col">
-            <img src="/logo.png?v=2" alt="Nutrigold Logo" className="footer-img-logo" />
+            <img src="/logo.png" alt="Nutrigold Logo" className="footer-img-logo" />
             <p className="footer-desc">
               Pure, healthy, and high-quality vegetable oil for every home. We bring the golden standard of cooking to your kitchen.
             </p>

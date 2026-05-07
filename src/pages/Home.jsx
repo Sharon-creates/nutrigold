@@ -6,12 +6,12 @@ import './Home.css';
 
 const Home = () => {
   const images = [
-    "/slide-1.png",
-    "/slide-2.png",
-    "/slide-3.png",
-    "/slide-4.png",
-    "/slide-5.png",
-    "/slide-6.png"
+    "/slide (1).png",
+    "/slide (2).png",
+    "/slide (3).png",
+    "/slide (4).png",
+    "/slide (5).png",
+    "/slide (6).png"
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -50,9 +50,9 @@ const Home = () => {
                 src={img} 
                 alt="Premium Nutrigold Cooking Oil" 
                 className={`hero-image slide-img ${index === currentSlide ? 'active' : ''}`}
-                loading="eager"
+                loading={index === 0 ? "eager" : "lazy"}
                 decoding="async"
-                {...(index === 0 ? { fetchpriority: "high" } : {})}
+                {...(index === 0 ? { fetchpriority: "high" } : { fetchpriority: "low" })}
               />
             ))}
           </div>
